@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>BlueJuicyAds - Products</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="flexiWidgets.css">
+  <link rel="stylesheet" href="FlexiWidgets.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-theme">
+  <div id="nav"></div>
+  <h2>
+    Get live products :-
+  </h2>
+  <div id="products">
+    
+  </div>
+  <!-- Project -->
+  <script src="flexiWidgets.js"></script>
+  <script src="blutkit.min.js"></script>
+  <script src="main.js"></script>
+  <script src="products.js"></script>
+  <script>
+    var app = new BlueKit_Android_Application;
+BlueKit_App_Data = `
+<div id="nav"></div>
+<div style="margin: 10px">
+  <h2>
+    Products
+  </h2>
+  <div class="panel" onclick="window.open('/products/fozdtxrail/')">
+    <img src="products/fozdtxrail/root.jpg" alt="FOZ DTX RAILS" width="200px"> Experience the Realism of the FOZ DTX HYPER REALSTIC 1024X RAILS POM + PBBBR SUPPORT IN MINECRAFT
+    <h2>
+    FOZ DTX RAILS - Hyper Realstic</h2>
+  </div>
+  <div id="products">
+    
+  </div>
+  <br><br>
+  <center id="productsc">
+  </center>
+`;
+app.AppStatus = 1;
+app.CreateApp(0);
+
+// navigation
+var nav = app.Widgets().Button('BlueJuicyAds - The Creator Supporting Platform');
+nav.Render('nav');
+nav.SetHeight(100);
+nav.SetWidth(100,'%');
+nav.SetFontSize(20);
+document.getElementById(nav.GetRoot()).style.borderRadius='0px';
+
+  </script>
+</body>
+</html>

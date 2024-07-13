@@ -1,0 +1,24 @@
+body {
+  margin: 0px;
+  background: whitesmoke;
+}
+
+*{
+  font-family: Helvetica;
+  font-weight: 10;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#nav button{
+  font-size: 50px;
+}
+
+.panel {
+  border-left: 5px solid #1A73E9;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 1s;
+}
+.panel:hover{
+  transform: scale(1.03);
+}
